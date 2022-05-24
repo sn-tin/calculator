@@ -1,0 +1,14 @@
+$font-family:  'Roboto', sans-serif;
+$purple-button: hsl(263, 52%, 49%);
+$purple-text: hsl(263, 79%, 85%);
+$teal-btn: hsl(193, 65%, 83%);
+$teal-text: hsl(193, 84%, 58%);
+$white-bg: hsl(0, 0%, 100%);
+$body-bg: hsl(214, 49%, 85%);
+$grey-btn: rgb(236, 236, 236);
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
