@@ -13,27 +13,37 @@ main {
   justify-content: center;
 }
 
-.result {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: right;
-  font-size: clamp(3.9rem, 2.5vw, 4rem);
-  background-color: rgb(236, 234, 234);
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: inset 5px 5px 0 rgb(145, 145, 145), inset -5px -5px 0 rgb(201, 201, 201);
-}
-
 .calculator {
   background-color: hsl(0deg, 0%, 100%);
-  height: 500px;
+  height: 570px;
   width: 400px;
   margin: 50px 10px;
   padding: 30px;
   border-radius: 20px;
+}
+
+.output {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: rgb(236, 234, 234);
+  border-radius: 20px;
+  padding: 10px 20px;
+  word-wrap: break-word;
+  word-break: break-all;
+  box-shadow: inset 5px 5px 0 rgb(145, 145, 145), inset -5px -5px 0 rgb(201, 201, 201);
+}
+.output .prev-result {
+  color: rgb(99, 92, 92);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.output .current-result {
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .keys {
@@ -43,14 +53,20 @@ main {
   align-items: center;
 }
 
+.row {
+  margin-bottom: 10px;
+}
+
 button {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   border-radius: 10px;
   border: 0;
-  margin-bottom: 8px;
-  margin: 3px 3px 5px;
+  margin: 5px;
+  -moz-box-shadow: 3px 3px 0 rgb(133, 133, 133);
+  -webkit-box-shadow: 3px 3px 0 rgb(133, 133, 133);
+  -ms-box-shadow: 3px 3px 0 rgb(133, 133, 133);
   box-shadow: 3px 3px 0 rgb(133, 133, 133);
 }
 
@@ -66,12 +82,25 @@ button {
 
 .purple-bg {
   background-color: hsl(263deg, 76%, 81%);
+  -moz-box-shadow: 3px 3px 0 rgb(84, 3, 116);
+  -webkit-box-shadow: 3px 3px 0 rgb(84, 3, 116);
+  -ms-box-shadow: 3px 3px 0 rgb(84, 3, 116);
   box-shadow: 3px 3px 0 rgb(84, 3, 116);
 }
 
 .teal-bg {
   background-color: hsl(263deg, 52%, 49%);
+  -moz-box-shadow: 3px 3px 0 rgb(145, 128, 151);
+  -webkit-box-shadow: 3px 3px 0 rgb(145, 128, 151);
+  -ms-box-shadow: 3px 3px 0 rgb(145, 128, 151);
   box-shadow: 3px 3px 0 rgb(145, 128, 151);
+}
+
+.clicked {
+  -moz-box-shadow: inset -3px 3px 0 rgb(133, 133, 133);
+  -webkit-box-shadow: inset -3px 3px 0 rgb(133, 133, 133);
+  -ms-box-shadow: inset -3px 3px 0 rgb(133, 133, 133);
+  box-shadow: inset -3px 3px 0 rgb(133, 133, 133);
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

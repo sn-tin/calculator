@@ -17,40 +17,46 @@
 <body>
     <main>
         <div class="calculator shadow-lg">
-            <div class="result">0</div>
+            <div class="output">
+                <div data-previous-operand="" class="prev-operand">28 +</div>
+                <div data-current-operand="" class="current-operand">30</div>
+            </div> 
             <div class="keys">
                 <div class="row">
-                    <button class="col-3 purple-bg" type="button">AC</button>
-                    <button class="col-3 purple-bg" type="button">+/-</button>
-                    <button class="col-3 purple-bg" type="button">%</button>
-                    <button class="col-3 purple-bg" type="button">÷</button>
+                    <button data-all-clear="" class="col-3 purple-bg" type="button">AC</button>
+                    <button data-delete="" class="col-3 purple-bg" type="button">DEL</button>
+                    <button data-number-sign="" class="col-3 purple-bg" type="button">+/-</button>
+                    <button data-operation="" class="col-3 purple-bg" type="button">/</button>
                 </div>
                 <div class="row">
-                    <button class="col-3" type="button">7</button>
-                    <button class="col-3" type="button">8</button>
-                    <button class="col-3" type="button">9</button>
-                    <button class="col-3 purple-bg" type="button">x</button>
+                    <button data-number="" class="col-3" type="button">7</button>
+                    <button data-number="" class="col-3" type="button">8</button>
+                    <button data-number="" class="col-3" type="button">9</button>
+                    <button data-operation="" class="col-3 purple-bg" type="button">*</button>
                 </div>
                 <div class="row">
-                    <button class="col-3" type="button">4</button>
-                    <button class="col-3" type="button">5</button>
-                    <button class="col-3" type="button">6</button>
-                    <button class="col-3 purple-bg" type="button">-</button>
+                    <button data-number="" class="col-3" type="button">4</button>
+                    <button data-number="" class="col-3" type="button">5</button>
+                    <button data-number="" class="col-3" type="button">6</button>
+                    <button data-operation="" class="col-3 purple-bg" type="button">-</button>
                 </div>
                 <div class="row">
-                    <button class="col-3" type="button">1</button>
-                    <button class="col-3" type="button">2</button>
-                    <button class="col-3" type="button">3</button>
-                    <button class="col-3 purple-bg" type="button">+</button>
+                    <button data-number="" class="col-3" type="button">1</button>
+                    <button data-number="" class="col-3" type="button">2</button>
+                    <button data-number="" class="col-3" type="button">3</button>
+                    <button data-operation="" class="col-3 purple-bg" type="button">+</button>
                 </div>
                 <div class="row">
-                    <button class="col-6" type="button">0</button>
-                    <button class="col-3" type="button">.</button>
-                    <button class="col-3 teal-bg" type="button">=</button>
+                    <button data-number="" class="col-6" type="button">0</button>
+                    <button data-number="" class="col-3" type="button">.</button>
+                    <button data-equals="" class="col-3 teal-bg" type="button">=</button>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <p>Designed and Developed by Kristine de Jesus</p>
+    </footer>
     <script src="/src.e31bb0bc.js"></script>
 </body>
 </html>
